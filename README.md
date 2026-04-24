@@ -1,16 +1,6 @@
-# React + Vite
+To enable observability in frontend with newRelic use "Browser agent"
+npm install @newrelic/browser-agent --save
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Add BrowserAgent agent in main.jsx 
+The import statement for the browser agent should be the first thing in your source file. After the remaining import statements, immediately instantiate and configure the browser agent. Do this before adding any other code so the browser agent has a chance to load and capture data as early as possible.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
